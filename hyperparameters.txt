@@ -1,0 +1,34 @@
+- Feature Selection Algorithms
+  - SES
+    - maxK: 2, 3
+    - alpha: 0.01, 0.05, 0.1
+  - LASSO
+    - penaltyBIC: 0, 0.25, 0.5, 1, 1.25, 1.5, 2
+- Classification Algorithms
+  - Decision Trees
+    - minLeafSize: 1, 2, 3, 4, 5
+    - alphaPruning: 0.01, 0.05, 0.1
+  - Random Forests
+    - nTrees: 100, 1000
+    - varsToSplit: [1/3, 2/3, 1, 4/3, 5/3, 2] * sqrt(m) # m: number of features
+  - Support Vector Machines
+    - kernel: linear, gaussian, poly_2, poly_3, poly_4
+    - cost: 0.001, 0.01, 0.1, 1, 10, 100
+    - gamma: 0.001, 0.01, 0.1, 1, 10, 100
+  - L2-regularized Logistic Regression
+    - lambda: 0.0001, 0.001, 0.01, 0.1, 1, 10, 100
+- Regression Algorithms
+  - Decision Trees
+    - minLeafSize: 3, 5, 7, 9
+    - alphaPruning: 0.01, 0.05, 0.1
+  - Random Forests
+    - nTrees: 100, 1000
+    - varsToSplit: [1/3, 1/4, 1/5, 1/6, 1/7, 1/8, 1/9] * m # m: number of features
+  - Support Vector Regression
+    - kernel: linear, gaussian, poly_2, poly_3, poly_4
+    - cost: 0.001, 0.01, 0.1, 1, 10, 100
+    - gamma: 0.001, 0.01, 0.1, 1, 10, 100
+    - epsilon: 0.5, 0.1, 0.01, 0.001, 0.0001
+  - L2-regularized Linear Regression
+    - lambda: 0.0001, 0.001, 0.01, 0.1, 1, 10, 100
+
